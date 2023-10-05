@@ -63,7 +63,8 @@ int main() {
         
                 if (update >= 1 && update <= jumlah) {
                     cout << "Nama mahasiswa ke-" << update << " : ";    
-                    cin >> mhs[update - 1].nama;
+                    cin.ignore(); 
+                    getline(cin, mhs[update-1].nama); 
                     cout << "Nrp : ";
                     cin >> mhs[update - 1].nrp;
                     cout << "Umur : ";
